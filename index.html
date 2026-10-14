@@ -102,8 +102,8 @@ footer p{margin:0}
     <nav class="nav-links" aria-label="Main navigation">
       <a href="#home" onclick="showTab('home')">Home</a>
       <a href="#research" onclick="showTab('research')">Publications</a>
-      <a href="#teaching" onclick="showTab('teaching')">Notes</a>
-      <a href="#documents" onclick="showTab('documents')">Talks/Posters/Summer Schools</a>
+      <a href="#teaching" onclick="showTab('teaching')">Internships and Projects</a>
+      <a href="#documents" onclick="showTab('documents')">Talks/Posters</a>
       <button id="theme-toggle" class="theme-toggle" type="button" onclick="toggleTheme()" aria-label="Switch to light mode" title="Switch to light mode"><i class="fa-solid fa-sun" aria-hidden="true"></i></button>
     </nav>
   </div>
@@ -148,61 +148,88 @@ footer p{margin:0}
     </div>
   </section>
 
-  <section class="home-section">
-    <div class="section-label">Affiliations &amp; education</div>
-    <div class="facts-grid">
-      <div class="fact">
-        <div class="fact-title">Present affiliation</div>
-        <div class="institution">Kirori Mal College</div>
-        <p>University of Delhi<br />Delhi, India</p>
-        <p><strong>Undergraduate Researcher</strong></p>
-         <p class="dates">2024 &ndash; Present</p>
-      </div>
+  ```html
+<section class="home-section">
+  <div class="section-label">Affiliations &amp; Education</div>
 
-      
-      <div class="fact">
-        <div class="fact-title">Collaborating student &amp; Bachelor Thesis Supervision</div>
-        <div class="affiliation-entry">
-          <div class="institution"> Università degli Studi di Salerno, UNISA</div>
-          <p>Salerno, Italy</p>
-          <p>Working under supervision of Prof. Massimo Blasone and co-supervision by Prof. Bipin Singh Koranga </p>
-          <p class="dates">2026 &ndash; Present</p>
-        </div>
-      </div>
+  <div class="facts-grid">
 
-      </div>
-      <div class="fact">
-        <div class="fact-title">Research Intern &amp; Under the IAC (Skill Enhancement Course) as a part of coursework</div>
-        <div class="affiliation-entry">
-          <div class="institution"> Jawaharlal Nehru University, New Delhi, India</div>
-          <p>School of Physical Sciences</p>
-          <p>Worked under supervision of Prof. Ng. K Francis and co-suvervised by Prof. Bipin Singh Koranga. </p>
-          <p class="dates">2025 &ndash; 2026</p>
-        </div>
-      </div>
-
+    <!-- Present Affiliation -->
+    <div class="fact">
+      <div class="fact-title">Present Affiliation</div>
+      <div class="institution">Kirori Mal College</div>
+      <p>University of Delhi<br />Delhi, India</p>
+      <p><strong>Undergraduate Researcher</strong></p>
+      <p class="dates">2024 &ndash; Present</p>
     </div>
-      <div class="fact">
-        <div class="fact-title">Incomming Summer Research Intern </div>
-        <div class="affiliation-entry">
-          <div class="institution"> Slovak Accademy of Sciences, Bratislava, Slovakia.</div>
-          <p>Research Center for Quantum Information (RCQI)</p>
-          <p>Worked under supervision of Prof. Mario Ziman. </p>
+
+    <!-- Bachelor's Thesis Supervision -->
+    <div class="fact">
+      <div class="fact-title">Collaborating Student &amp; Bachelor's Thesis</div>
+      <div class="affiliation-entry">
+        <div class="institution">
+          Università degli Studi di Salerno (UNISA)
         </div>
-      </div>
-      
-      <div class="fact">
-        <div class="fact-title">Education</div>
-        <div class="affiliation-entry">
-          <div class="institution">B.Sc. (Hons.) with Research in Physics</div>
-          <p>Kirori Mal College, University of Delhi<br />India &mdash; 2027</p>
-          <p class="dates">2023 &ndash; Present</p>
-        </div>
+        <p>Salerno, Italy</p>
+        <p>
+          Working under the supervision of Prof. Massimo Blasone,
+          with co-supervision by Prof. Bipin Singh Koranga.
+        </p>
+        <p class="dates">2026 &ndash; Present</p>
       </div>
     </div>
-  </section>
-</div>
 
+    <!-- Research Internship at JNU -->
+    <div class="fact">
+      <div class="fact-title">
+        Research Intern &amp; Skill Enhancement Coursework (IAC)
+      </div>
+      <div class="affiliation-entry">
+        <div class="institution">
+          Jawaharlal Nehru University (JNU)
+        </div>
+        <p>School of Physical Sciences, New Delhi, India</p>
+        <p>
+          Worked under the supervision of Prof. Ng. K. Francis,
+          with co-supervision by Prof. Bipin Singh Koranga.
+        </p>
+        <p class="dates">2025 &ndash; 2026</p>
+      </div>
+    </div>
+
+    <!-- Incoming Summer Research Internship -->
+    <div class="fact">
+      <div class="fact-title">Incoming Summer Research Intern</div>
+      <div class="affiliation-entry">
+        <div class="institution">
+          Slovak Academy of Sciences
+        </div>
+        <p>Research Center for Quantum Information (RCQI)</p>
+        <p>Bratislava, Slovakia</p>
+        <p>
+          Research internship under the supervision of Prof. Mario Ziman.
+        </p>
+      </div>
+    </div>
+
+    <!-- Education -->
+    <div class="fact">
+      <div class="fact-title">Education</div>
+      <div class="affiliation-entry">
+        <div class="institution">
+          B.Sc. (Hons.) with Research in Physics
+        </div>
+        <p>
+          Kirori Mal College, University of Delhi<br />
+          India &mdash; Expected 2027
+        </p>
+        <p class="dates">2023 &ndash; Present</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+```
 <!-- Publications -->
 <div id="research" class="tabs">
   <section class="page-section">
@@ -286,11 +313,272 @@ footer p{margin:0}
     </ol>
   </section>
 </div>
-<!-- Notes -->
+```html
+<!-- Internships and Projects -->
 <div id="notes" class="tabs">
   <section class="page-section">
-    <div class="section-label">Notes</div>
-    <p>I will be sharing undergraduate-level notes on core physics courses, along with research notes on Quantum Information Theory (QIT) and Neutrino Physics. Stay tuned!</p>
+    <div class="section-label">Internships &amp; Research Projects</div>
+
+    <p>
+      My research experience spans neutrino physics, quantum information
+      theory, quantum entanglement, and computational studies of neutrino
+      oscillations. Through research projects, internships, and
+      international collaborations, I have explored wave-packet effects,
+      quantum-information measures, matter effects, and neutrino
+      phenomenology, connecting theoretical investigations with numerical
+      simulations and experimental data.
+    </p>
+
+    <div class="teaching-list">
+
+      <!-- Salerno International Research Project -->
+      <div class="teaching-entry">
+        <div class="teaching-term">2025 &ndash; Present</div>
+        <h3>International Research Project</h3>
+        <p>
+          <strong>Università degli Studi di Salerno (UNISA), Italy</strong>
+        </p>
+        <p>
+          <strong>External Supervisor:</strong> Prof. Massimo Blasone<br />
+          <strong>Internal Supervisor:</strong> Prof. Bipin Singh Koranga
+        </p>
+
+        <p>
+          <strong>Project:</strong>
+          Probing Quantum Foundations in Long-Baseline Neutrino Oscillations:
+          Wave Packet Approach from MINOS Data to DUNE Predictions.
+        </p>
+
+        <p>
+          I have been investigating the wave-packet description of
+          long-baseline neutrino oscillations, focusing on the connection
+          between quantum coherence, neutrino propagation, and observable
+          oscillation probabilities.
+        </p>
+
+        <ul>
+          <li>
+            Derived wave-packet oscillation probabilities from first
+            principles and fitted the framework to MINOS experimental data
+            to investigate the low-energy discrepancy.
+          </li>
+          <li>
+            Extended the analysis to DUNE, incorporating realistic matter
+            effects and neutrino mass ordering.
+          </li>
+          <li>
+            Investigated Fisher information to identify regions in which
+            the neutrino wave-packet spatial width can be most strongly
+            constrained.
+          </li>
+          <li>
+            Explored the triality relations between probability, visibility,
+            and entanglement, (P², V², E²), for detectors sensitive to
+            muon-neutrino states.
+          </li>
+        </ul>
+
+        <p>
+          <strong>Research focus:</strong> Neutrino oscillations, wave-packet
+          coherence, MINOS data analysis, DUNE predictions, quantum
+          foundations, and Fisher information.
+        </p>
+      </div>
+
+      <!-- KMC Undergraduate Research -->
+      <div class="teaching-entry">
+        <div class="teaching-term">2024 &ndash; Present</div>
+        <h3>Undergraduate Research Assistant</h3>
+        <p>
+          <strong>Kirori Mal College, University of Delhi, India</strong>
+        </p>
+        <p>
+          <strong>Supervisor:</strong> Prof. Bipin Singh Koranga
+        </p>
+
+        <p>
+          My research at KMC focuses on the intersection of neutrino
+          physics and quantum information theory, particularly the use
+          of entanglement and quantum-information measures to investigate
+          neutrino oscillations and physics beyond standard assumptions.
+        </p>
+
+        <p><strong>Project 1: Quantum-gravity corrections to neutrino entanglement</strong></p>
+        <p>
+          Investigated Planck-scale quantum-gravity corrections to
+          neutrino mass-squared splittings and mixing angles, examining
+          their effects on the von Neumann entanglement entropy of
+          two-flavor neutrino oscillations.
+        </p>
+        <p>
+          <strong>Outcome:</strong> Published in Nuclear Physics B (2026).
+        </p>
+
+        <p><strong>Project 2: Neutrino oscillations in matter and quantum entanglement</strong></p>
+        <p>
+          Studied matter effects on two-flavor neutrino oscillations using
+          the von Neumann entropy of the reduced flavor density matrix.
+          Compared the evolution of entanglement in matter with that in
+          vacuum to investigate how the propagation environment influences
+          quantum coherence.
+        </p>
+        <p>
+          <strong>Outcome:</strong> Published in the International Journal
+          of Quantum Information (2025).
+        </p>
+
+        <p><strong>Project 3: Quantum Fisher information and sterile neutrinos</strong></p>
+        <p>
+          Applied Quantum Fisher Information (QFI) and Classical Fisher
+          Information (CFI) to sterile-neutrino MSW and non-standard
+          interaction (NSI) scenarios. Investigated exact QFI–CFI
+          saturation for an NSI parameter and compared the quantum
+          information sensitivity associated with KM3NeT and IceCube
+          detector geometries using the Cramér–Rao bound.
+        </p>
+        <p>
+          <strong>Outcome:</strong> Preprint arXiv:2604.01256;
+          under review at the International Journal of Quantum Information,
+          as stated in my CV.
+        </p>
+      </div>
+
+      <!-- IISc Collaboration -->
+      <div class="teaching-entry">
+        <div class="teaching-term">September 2026 &ndash; Present</div>
+        <h3>Collaborative Research Project</h3>
+        <p>
+          <strong>Indian Institute of Science (IISc), Bengaluru, India</strong>
+        </p>
+        <p>
+          <strong>Collaborator:</strong> Dristii Patel, B.S. student
+        </p>
+
+        <p>
+          This ongoing project investigates the effects of Earth's
+          density profile on neutrino oscillations and the study of
+          neutrino asymmetries using numerical methods.
+        </p>
+
+        <ul>
+          <li>
+            Developed Python programs to investigate neutrino propagation
+            through Earth's layered density profile using the Preliminary
+            Reference Earth Model (PREM).
+          </li>
+          <li>
+            Studied how variations in matter density affect neutrino
+            oscillations.
+          </li>
+          <li>
+            Explored neutrino asymmetries and symmetry-violation studies,
+            including CP, CPT, and T.
+          </li>
+        </ul>
+
+        <p>
+          <strong>Status:</strong> Ongoing research project.
+        </p>
+      </div>
+
+      <!-- Vietnam Summer School -->
+      <div class="teaching-entry">
+        <div class="teaching-term">14 &ndash; 24 July 2026</div>
+        <h3>Mini Project &mdash; 10th Vietnam School on Neutrinos (VSoN10)</h3>
+        <p>
+          <strong>
+            International Center for Interdisciplinary Science and Education
+            (ICISE), Quy Nhon, Vietnam
+          </strong>
+        </p>
+        <p><strong>Supervisor:</strong> Dr. Jake McKean</p>
+
+        <p>
+          <strong>Project:</strong>
+          Neutrino Energy Reconstruction Using Lepton Kinematics vs. Hadron Information.
+        </p>
+
+        <p>
+          This project focused on reconstructing neutrino energies using
+          simulated interaction events and comparing reconstruction
+          approaches based on lepton kinematics and hadronic information.
+        </p>
+
+        <ul>
+          <li>
+            Used NEUT to simulate neutrino interaction events and generate
+            energy datasets.
+          </li>
+          <li>
+            Simulated charged-current quasi-elastic (CCQE) and
+            non-CCQE events.
+          </li>
+          <li>
+            Reconstructed neutrino energy using the lepton-kinematic method.
+          </li>
+          <li>
+            Compared reconstructed and true neutrino energies
+            (Eν(rec) and Eν(true)) to quantify the effects of final-state
+            interactions and nuclear binding energy.
+          </li>
+        </ul>
+
+        <p>
+          <strong>Research focus:</strong> Neutrino energy reconstruction,
+          Monte Carlo simulation, interaction kinematics, and experimental
+          neutrino physics.
+        </p>
+      </div>
+
+      <!-- JNU Internship -->
+      <div class="teaching-entry">
+        <div class="teaching-term">2025 &ndash; 2026</div>
+        <h3>Research Intern &mdash; Semesters V and VI</h3>
+        <p>
+          <strong>School of Physical Sciences, Jawaharlal Nehru University,
+          New Delhi, India</strong>
+        </p>
+        <p>
+          <strong>External Supervisor:</strong> Prof. Ng. K. Francis<br />
+          <strong>Internal Supervisor:</strong> Prof. Bipin Singh Koranga
+        </p>
+
+        <p><strong>Semester V: Quantum Information and Neutrino Oscillations</strong></p>
+        <p>
+          Investigated quantum-information aspects of neutrino oscillations,
+          with particular emphasis on CP violation in vacuum.
+        </p>
+
+        <p><strong>Semester VI: Wave-Packet Approach to Neutrino Oscillations</strong></p>
+        <p>
+          Developed computational models of three-flavor neutrino
+          oscillation probabilities in vacuum using Python. Studied the
+          CP-violating phase and Jarlskog invariant and implemented
+          entanglement entropy to investigate the mixedness of the
+          neutrino flavor state.
+        </p>
+
+        <ul>
+          <li>
+            Modeled three-flavor neutrino oscillation probabilities
+            computationally.
+          </li>
+          <li>
+            Examined the role of the CP phase and the Jarlskog invariant.
+          </li>
+          <li>
+            Used entanglement entropy to study the mixedness of
+            neutrino flavor states.
+          </li>
+          <li>
+            Studied wave-packet coherence loss and decoherence length,
+            connecting the limitations of the plane-wave approximation
+            with long-baseline experiments such as MINOS and DUNE.
+          </li>
+        </ul>
+      </div>
+
+    </div>
   </section>
 </div>
 ```
